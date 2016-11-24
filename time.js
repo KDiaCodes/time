@@ -3,7 +3,7 @@ function date(id) {
   d = date.getDate();
   year = date.getFullYear();
   month = date.getMonth();
-  months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+  months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
   result = `${d} ${months[month]} ${year}`;
   document.getElementById(id).innerHTML = result;
   setTimeout('date("'+id+'");','1000');
